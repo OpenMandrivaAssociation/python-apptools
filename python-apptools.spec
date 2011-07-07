@@ -1,7 +1,7 @@
 %define module	apptools
 %define name 	python-%{module}
 %define version 4.0.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: 	Enthought Tool Suite - apptools project
 Name: 	 	%{name}
