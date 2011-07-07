@@ -16,7 +16,6 @@ BuildArch: 	noarch
 Obsoletes:	python-enthought-apptools
 Requires:  	python-configobj
 Requires:  	python-traitsui >= 4.0.0
-Requires:	python-envisage >= 4.0.0
 Requires:  	python-numpy >= 1.1.0
 BuildRequires: 	python-setuptools >= 0.6c8
 BuildRequires: 	python-sphinx
