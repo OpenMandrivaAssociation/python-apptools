@@ -1,7 +1,7 @@
 %define module	apptools
 %define name 	python-%{module}
-%define version 4.0.0
-%define release %mkrel 2
+%define version 4.0.1
+%define release %mkrel 1
 
 Summary: 	Enthought Tool Suite - apptools project
 Name: 	 	%{name}
@@ -10,12 +10,12 @@ Release: 	%{release}
 Source0: 	http://www.enthought.com/repo/ets/%{module}-%{version}.tar.gz
 License: 	BSD
 Group: 	 	Development/Python
-Url: 	 	http://code.enthought.com/projects/app_tools.php
+Url: 	 	https://github.com/enthought/apptools/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: 	noarch
 Obsoletes:	python-enthought-apptools
 Requires:  	python-configobj
-Requires:  	python-traitsui >= 4.0.0
+Requires:  	python-traitsui >= 4.1.0
 Requires:  	python-numpy >= 1.1.0
 BuildRequires: 	python-setuptools >= 0.6c8
 BuildRequires: 	python-sphinx
