@@ -23,7 +23,7 @@ Requires:  	python-configobj
 Requires:  	python-traitsui >= 4.2.0
 Requires:  	python-numpy >= 1.1.0
 BuildRequires: 	python-setuptools >= 0.6c8
-BuildRequires: 	python-sphinx
+BuildRequires: 	python-setupdocs, python-sphinx
 
 %description
 The apptools project includes a set of packages that Enthought has found
@@ -34,15 +34,11 @@ that is commonly needed by many applications.
 %setup -q -n %{module}-%{version}
 
 %build
-
 %__python setup.py build
-pushd docs
-make html
-popd
+%__python setup.py build_docs
 
 %install
 %__rm -rf %{buildroot}
-
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %clean
@@ -50,5 +46,5 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %files 
 %defattr(-,root,root)
-%doc *.txt *.rst examples/ docs/build/html/
+%doc *.txt *.rst examples/ build/docs/html/
 %py_sitedir/%{module}*
