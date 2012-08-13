@@ -23,7 +23,8 @@ Requires:  	python-configobj
 Requires:  	python-traitsui >= 4.2.0
 Requires:  	python-numpy >= 1.1.0
 BuildRequires: 	python-setuptools >= 0.6c8
-BuildRequires: 	python-setupdocs, python-sphinx
+BuildRequires: 	python-setupdocs >= 1.0.5 
+BuildRequires:	python-sphinx
 
 %description
 The apptools project includes a set of packages that Enthought has found
