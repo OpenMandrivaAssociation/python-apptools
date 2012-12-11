@@ -49,3 +49,24 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 %defattr(-,root,root)
 %doc *.txt *.rst examples/ build/docs/html/
 %py_sitedir/%{module}*
+
+
+%changelog
+* Mon Aug 13 2012 Lev Givon <lev@mandriva.org> 4.1.0-1
++ Revision: 814658
+- Update to 4.1.0.
+
+* Tue Dec 27 2011 Lev Givon <lev@mandriva.org> 4.0.1-1
++ Revision: 745664
+- Update to 4.0.1.
+
+* Thu Jul 07 2011 Lev Givon <lev@mandriva.org> 4.0.0-2
++ Revision: 689267
+- Rebuild.
+- Remove envisage dependency.
+
+* Thu Jul 07 2011 Lev Givon <lev@mandriva.org> 4.0.0-1
++ Revision: 689177
+- import python-apptools
+
+
