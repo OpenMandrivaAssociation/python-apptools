@@ -10,9 +10,9 @@
 
 Summary: 	Enthought Tool Suite - Application Tools
 Name: 	 	%{name}
-Version: 	%{version}
-Release: 	%{release}
-Source0: 	http://www.enthought.com/repo/ets/%{module}-%{version}.tar.gz
+Version: 	4.2.0
+Release: 	1
+Source0: 	https://www.enthought.com/repo/ets/apptools-%{version}.tar.gz
 License: 	BSD
 Group: 	 	Development/Python
 Url: 	 	https://github.com/enthought/apptools/
@@ -68,5 +68,6 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 * Thu Jul 07 2011 Lev Givon <lev@mandriva.org> 4.0.0-1
 + Revision: 689177
 - import python-apptools
+
 
 
