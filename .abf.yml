@@ -1,4 +1,5 @@
 removed_sources:
   apptools-4.1.0.tar.gz: 8d7207746b7087df0dfb8fc925ec82fcd1debb25
-sources:
   apptools-4.2.0.tar.gz: a5fd25b545bd5a8d5b3a649379bcd25c7c1467a2
+sources:
+  apptools-4.2.1.tar.gz: 177c083dfb31b7eabf0d04de548ea592cb5540e5

@@ -1,22 +1,17 @@
 %define module	apptools
-%define name 	python-%{module}
-%define version 4.1.0
 %define rel		1
 %if %mdkversion < 201100
-%define release %mkrel %{rel}
 %else
-%define	release %{rel}
 %endif
 
 Summary: 	Enthought Tool Suite - Application Tools
-Name: 	 	%{name}
-Version: 	4.2.0
+Name: 	 	python-%{module}
+Version: 	4.2.1
 Release: 	1
-Source0: 	https://www.enthought.com/repo/ets/apptools-%{version}.tar.gz
+Source0: 	http://www.enthought.com/repo/ets/apptools-%{version}.tar.gz
 License: 	BSD
 Group: 	 	Development/Python
 Url: 	 	https://github.com/enthought/apptools/
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: 	noarch
 Obsoletes:	python-enthought-apptools
 Requires:  	python-configobj
@@ -39,16 +34,13 @@ that is commonly needed by many applications.
 %__python setup.py build_docs
 
 %install
-%__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %clean
-%__rm -rf %{buildroot}
 
 %files 
-%defattr(-,root,root)
 %doc *.txt *.rst examples/ build/docs/html/
-%py_sitedir/%{module}*
+%{py_puresitedir}/%{module}*
 
 
 %changelog
@@ -68,6 +60,7 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 * Thu Jul 07 2011 Lev Givon <lev@mandriva.org> 4.0.0-1
 + Revision: 689177
 - import python-apptools
+
 
 
 
