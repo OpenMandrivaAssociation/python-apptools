@@ -7,7 +7,7 @@
 Summary: 	Enthought Tool Suite - Application Tools
 Name: 	 	python-%{module}
 Version: 	4.2.1
-Release: 	1
+Release: 	2
 Source0: 	http://www.enthought.com/repo/ets/apptools-%{version}.tar.gz
 License: 	BSD
 Group: 	 	Development/Python
